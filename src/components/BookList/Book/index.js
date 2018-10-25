@@ -3,14 +3,18 @@ import React, { PureComponent } from 'react';
 class Book extends PureComponent {
   render() {
     return (
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">{this.props.book.title}</p>
+      <div className="card">
+        <header className="card-header">
+          <p className="card-header-title">{this.props.book.title}</p>
         </header>
-        <div class="card-content">
-          <div class="content">
-            <p class="subtitle">Jeff Atwood</p>
-            <p>{this.props.book.description}</p>
+        <div className="card-content">
+          <div className="content">
+            <div className="tags">
+              {this.props.book.authors.map(author => (
+                <span className="tag is-light is-rounded">{author.name}</span>
+              ))}
+              <p>{this.props.book.description}</p>
+            </div>
           </div>
         </div>
       </div>
