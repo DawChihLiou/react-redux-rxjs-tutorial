@@ -9,13 +9,13 @@ class BookList extends PureComponent {
   }
   render() {
     return (
-      <section class="section is-white">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column">
-              <h1 class="title">Books</h1>
+      <section className="section is-white">
+        <div className="container">
+          <div className="columns is-centered">
+            <div className="column">
+              <h1 className="title">Books</h1>
               {this.state.books.map(book => (
-                <Book book={book} />
+                <Book key={book.isbn10} book={book} />
               ))}
             </div>
           </div>

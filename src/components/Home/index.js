@@ -5,22 +5,22 @@ import './styles.scss';
 class Home extends PureComponent {
   render() {
     return (
-      <section class="hero is-link is-fullheight-with-navbar">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <div class="columns is-centered">
-              <div class="column is-half">
-                <div class="is-flex is-horizontal-center">
-                  <figure class="image is-128x128">
+      <section className="hero is-link is-fullheight-with-navbar">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <div className="columns is-centered">
+              <div className="column is-half">
+                <div className="is-flex is-horizontal-center">
+                  <figure className="image is-128x128">
                     <img
-                      class="is-rounded"
+                      className="is-rounded"
                       src={photo}
                       alt="daw-chih welcome you"
                     />
                   </figure>
                 </div>
 
-                <h1 class="title">Welcome to the workshop!</h1>
+                <h1 className="title">Welcome to the workshop!</h1>
               </div>
             </div>
           </div>
