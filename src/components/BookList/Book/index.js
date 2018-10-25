@@ -11,10 +11,12 @@ class Book extends PureComponent {
           <div className="content">
             <div className="tags">
               {this.props.book.authors.map(author => (
-                <span className="tag is-light is-rounded">{author.name}</span>
+                <span key={author.name} className="tag is-light is-rounded">
+                  {author.name}
+                </span>
               ))}
-              <p>{this.props.book.description}</p>
             </div>
+            <p>{this.props.book.description}</p>
           </div>
         </div>
       </div>
