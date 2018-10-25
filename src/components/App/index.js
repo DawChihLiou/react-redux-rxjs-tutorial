@@ -3,6 +3,7 @@ import './styles.css';
 
 import Navbar from '../Navbar';
 import Home from '../Home';
+import BookList from '../BookList';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Home />
+        <BookList />
       </div>
     );
   }
